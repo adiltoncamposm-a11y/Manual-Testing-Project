@@ -136,6 +136,4 @@ The testing identified validation issues involving:
 * UI validation messages
 
 ## Project Documentation
-
-* [Test Cases](test-cases/test-cases.md)
-* [Bug Reports](bug-reports/bugs.md)
+test cases: https://github.com/adiltoncamposm-a11y/Web-Testing-UrbanScooter/blob/f71336c677a55be732edec9a86e65e080bf24b26/Test%20Cases
