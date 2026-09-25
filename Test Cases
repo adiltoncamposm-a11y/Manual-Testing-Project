@@ -1,0 +1,918 @@
+# Test Cases – Urban Routes Web Application
+
+## Test Case T-1
+
+**Test Case:** Verify that the First Name field accepts Latin characters.
+
+**Precondition:**
+- Internet connection is stable.
+- Server is running.
+- First Name field is empty.
+
+**Steps:**
+1. Click the First Name field.
+2. Enter Latin characters.
+
+**Test Data:** `Maria`
+
+**Expected Result:**  
+The First Name field accepts Latin characters.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-2
+
+**Test Case:** Verify that the First Name field accepts spaces between characters.
+
+**Precondition:**
+- Internet connection is stable.
+- Server is running.
+- First Name field is empty.
+
+**Steps:**
+1. Click the First Name field.
+2. Enter a first name containing spaces.
+
+**Test Data:** `Jonh carter`
+
+**Expected Result:**  
+The First Name field accepts spaces between characters.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-3
+
+**Test Case:** Verify that the First Name field accepts a dash.
+
+**Test Data:** `aa-bb`
+
+**Expected Result:**  
+The First Name field accepts a dash.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-4
+
+**Test Case:** Verify that the First Name field displays an error when left empty.
+
+**Test Data:** Empty
+
+**Expected Result:**  
+The user cannot continue and an error message is displayed.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-5
+
+**Test Case:** Verify that the First Name field does not accept periods.
+
+**Test Data:** `jose...`
+
+**Expected Result:**  
+The First Name field rejects periods.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-6
+
+**Test Case:** Verify that the First Name field does not accept commas.
+
+**Test Data:** `Juan,,,`
+
+**Expected Result:**  
+The First Name field rejects commas.
+
+**Actual Result – Chrome 1280x720:**  
+Commas were accepted.
+
+**Actual Result – Opera 1280x720:**  
+Commas were accepted.
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-7
+
+**Test Case:** Verify that the First Name field does not accept numbers.
+
+**Test Data:** `Luis7383`
+
+**Expected Result:**  
+The First Name field rejects numbers.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-8
+
+**Test Case:** Verify that the First Name field does not accept special characters.
+
+**Test Data:** `Manuel&$@`
+
+**Expected Result:**  
+The First Name field rejects special characters.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-9
+
+**Test Case:** Verify that the First Name field does not accept non-Latin characters.
+
+**Test Data:** `你好`
+
+**Expected Result:**  
+The First Name field rejects non-Latin characters.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-10
+
+**Test Case:** Verify that the First Name field accepts names from 2 to 15 characters.
+
+**Boundary Values:**
+- 1
+- 2
+- 3
+- 14
+- 15
+- 16
+
+**Expected Result:**  
+Names containing 2–15 characters are accepted.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-11
+
+**Test Case:** Verify that the First Name field rejects 0–1 characters.
+
+**Boundary Values:**
+- 0
+- 1
+
+**Expected Result:**  
+The field displays a validation error.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-12
+
+**Test Case:** Verify that the First Name field rejects 16–18 characters.
+
+**Test Data:**
+- `SebastianRodriguez`
+- `AlexandersonRayX`
+- `Valentinagomelux`
+
+**Expected Result:**  
+The field rejects names longer than 15 characters.
+
+**Actual Result – Chrome 1280x720:**  
+Pass
+
+**Actual Result – Opera 1280x720:**  
+Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-13
+
+**Test Case:** Verify complete UI validation for an invalid First Name.
+
+**Expected Result:**
+- Field is highlighted in red.
+- Error message is displayed.
+- User cannot continue until valid data is entered.
+
+**Actual Result – Chrome 1280x720:**  
+Red highlight displayed with message: `Enter a valid name`.
+
+**Actual Result – Opera 1280x720:**  
+Red highlight displayed with message: `Enter a valid name`.
+
+**Bug:** [KAN-1](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-1)
+
+**Status:** ❌ Failed
+
+---
+
+# Last Name
+
+## Test Case T-14
+
+**Test Case:** Verify that the Last Name field accepts Latin characters.
+
+**Test Data:** `Jose`
+
+**Expected Result:**  
+The Last Name field accepts Latin characters.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-15
+
+**Test Case:** Verify that the Last Name field accepts spaces.
+
+**Test Data:** `Luis manuel`
+
+**Expected Result:**  
+The Last Name field accepts spaces.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-16
+
+**Test Case:** Verify that the Last Name field accepts a dash.
+
+**Test Data:** `jose-luis`
+
+**Expected Result:**  
+The Last Name field accepts a dash.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-17
+
+**Test Case:** Verify that the Last Name field displays an error when empty.
+
+**Expected Result:**  
+The user cannot continue and an error message is displayed.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-18
+
+**Test Case:** Verify that the Last Name field does not accept periods.
+
+**Test Data:** `Mario...`
+
+**Expected Result:**  
+The field rejects periods.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-19
+
+**Test Case:** Verify that the Last Name field does not accept commas.
+
+**Test Data:** `Luisa,,,`
+
+**Expected Result:**  
+The field rejects commas.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-20
+
+**Test Case:** Verify that the Last Name field does not accept numbers.
+
+**Test Data:** `Rosa8956`
+
+**Expected Result:**  
+The field rejects numbers.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-21
+
+**Test Case:** Verify that the Last Name field does not accept special characters.
+
+**Test Data:** `will*&&`
+
+**Expected Result:**  
+The field rejects special characters.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-22
+
+**Test Case:** Verify that the Last Name field does not accept non-Latin characters.
+
+**Test Data:** `안녕하세요`
+
+**Expected Result:**  
+The field rejects non-Latin characters.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-23
+
+**Test Case:** Verify that the Last Name field accepts 2–15 characters.
+
+**Boundary Values:** 1, 2, 3, 14, 15, 16
+
+**Expected Result:**  
+The field accepts 2–15 characters and rejects values longer than 15.
+
+**Actual Result:**  
+Values longer than 15 characters were accepted in Chrome and Opera.
+
+**Bug:** [KAN-5](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-5)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-24
+
+**Test Case:** Verify that the Last Name field rejects 0–1 characters.
+
+**Test Data:** `W`, empty
+
+**Expected Result:**  
+The field displays a validation error.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-25
+
+**Test Case:** Verify that the Last Name field rejects 16–18 characters.
+
+**Test Data:**
+- `AlejandroFernandez`
+- `AlexandersonRayX`
+- `Valentinagomelux`
+
+**Expected Result:**  
+The field rejects values longer than 15 characters.
+
+**Actual Result:**  
+Values longer than 15 characters were accepted.
+
+**Bug:** [KAN-5](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-5)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-26
+
+**Test Case:** Verify complete UI validation for an invalid Last Name.
+
+**Test Data:** `Александр`
+
+**Expected Result:**
+- Field highlighted in red.
+- Message: `Enter a valid Last name`.
+- User cannot continue.
+
+**Actual Result:**  
+Field was highlighted in red, but the message displayed was `Enter a valid name`.
+
+**Bug:** [KAN-2](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-2)
+
+**Status:** ❌ Failed
+
+---
+
+# Address
+
+## Test Case T-27
+
+**Test Case:** Verify that the Address field accepts Latin letters.
+
+**Test Data:** `Sherman`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-28
+
+**Test Case:** Verify that the Address field accepts numbers.
+
+**Test Data:** `Lewis8975`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-29
+
+**Test Case:** Verify that the Address field accepts spaces.
+
+**Test Data:** `14 wea brus`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-30
+
+**Test Case:** Verify that the Address field accepts dashes.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-31
+
+**Test Case:** Verify that the Address field accepts periods.
+
+**Test Data:** `15 St. Patrick St.`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-32
+
+**Test Case:** Verify that the Address field accepts commas.
+
+**Test Data:** `16 Johnson, Marcus`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-33
+
+**Test Case:** Verify that the Address field rejects special characters.
+
+**Test Data:** `45 Johnson#@%`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-34
+
+**Test Case:** Verify that the Address field rejects non-Latin characters.
+
+**Test Data:** `67 Johnsoこんにちは`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-35
+
+**Test Case:** Verify that the Address field accepts 5–50 characters.
+
+**Expected Result:**  
+A 50-character address should be accepted.
+
+**Actual Result:**  
+A 50-character address was rejected in Chrome and Opera.
+
+**Bug:** [KAN-6](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-6)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-36
+
+**Test Case:** Verify that the Address field rejects 0–4 characters.
+
+**Expected Result:**  
+The field should display a validation error.
+
+**Actual Result:**  
+The user could proceed when the field was empty.
+
+**Bug:** [KAN-19](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-19)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-37
+
+**Test Case:** Verify that the Address field rejects 51–52 characters.
+
+**Expected Result:**  
+Values longer than 50 characters should be rejected.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-38
+
+**Test Case:** Verify that leading and trailing spaces are removed after leaving the field.
+
+**Test Data:** ` 742 Evergreen Terrace `
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-39
+
+**Test Case:** Verify complete UI validation for an invalid Address.
+
+**Expected Result:**  
+Error message: `Enter a valid address`.
+
+**Actual Result:**  
+Error message: `Enter a valid number`.
+
+**Bug:** [KAN-3](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-3)
+
+**Status:** ❌ Failed
+
+---
+
+# Subway Station
+
+## Test Case T-40
+
+**Test Case:** Verify that station suggestions appear when typing.
+
+**Test Data:** `7th Street`
+
+**Expected Result:**  
+Matching station suggestions are displayed.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-41
+
+**Test Case:** Verify that the subway station list is correctly loaded from the backend API.
+
+**Expected Result:**  
+Matching Los Angeles subway stations are displayed.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-42
+
+**Test Case:** Verify that submitting without selecting a subway station displays an error.
+
+**Expected Result:**  
+The user cannot continue and a required-field error is displayed.
+
+**Actual Result:**  
+`Choose the station`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-43
+
+**Test Case:** Verify that a non-existent subway station returns no results.
+
+**Test Data:** `fstegos`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+# Phone
+
+## Test Case T-44
+
+**Test Case:** Verify that the Phone field accepts a number with `+`.
+
+**Test Data:** `+9176417385`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-45
+
+**Test Case:** Verify that the Phone field rejects a number without `+`.
+
+**Test Data:** `91764173857`
+
+**Expected Result:**  
+The phone number should be rejected.
+
+**Actual Result:**  
+The phone number was accepted.
+
+**Bug:** [KAN-7](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-7)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-46
+
+**Test Case:** Verify that the Phone field rejects Latin letters.
+
+**Test Data:** `+45591764173u`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-47
+
+**Test Case:** Verify that the Phone field rejects commas.
+
+**Test Data:** `+9,64,17395`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-48
+
+**Test Case:** Verify that the Phone field rejects periods.
+
+**Test Data:** `+9.64.1738`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-49
+
+**Test Case:** Verify that the Phone field rejects special characters.
+
+**Test Data:** `+964173@#$`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-50
+
+**Test Case:** Verify that the Phone field rejects non-Latin characters.
+
+**Test Data:** `+93364173中文`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-51
+
+**Test Case:** Verify that the Phone field rejects dashes.
+
+**Test Data:** `+9641-78-999`
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-52
+
+**Test Case:** Verify that the Phone field accepts 10–12 characters.
+
+**Boundary Values:** 9, 10, 11, 12, 13
+
+**Expected Result:**  
+Only phone numbers containing 10–12 characters should be accepted.
+
+**Actual Result:**  
+The application accepted a 13-character value and rejected a valid 10-character value.
+
+**Bug:** [KAN-8](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-8)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-53
+
+**Test Case:** Verify that the Phone field rejects 0–9 characters.
+
+**Expected Result:**  
+The field displays a validation error.
+
+**Chrome:** Pass  
+**Opera:** Pass
+
+**Status:** ✅ Passed
+
+---
+
+## Test Case T-54
+
+**Test Case:** Verify that the Phone field rejects 13–14 characters.
+
+**Expected Result:**  
+Values containing 13–14 characters should be rejected.
+
+**Actual Result:**  
+A 13-character value was accepted.
+
+**Bug:** [KAN-8](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-8)
+
+**Status:** ❌ Failed
+
+---
+
+## Test Case T-55
+
+**Test Case:** Verify complete UI validation for an invalid Phone number.
+
+**Test Data:** `こんにちは, 東京`
+
+**Expected Result:**  
+The field is highlighted in red and displays:
+
+`Enter a valid phone number`
+
+**Actual Result:**  
+The field was highlighted in red but displayed:
+
+`Enter a valid number`
+
+**Bug:** [KAN-4](https://adiltoncamposm1775843768708.atlassian.net/browse/KAN-4)
+
+**Status:** ❌ Failed
